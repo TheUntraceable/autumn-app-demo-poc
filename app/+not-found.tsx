@@ -6,7 +6,7 @@ import { Container } from '@/components/Container';
 
 export default function NotFoundScreen() {
   return (
-    <View className="flex flex-1 bg-background text-foreground">
+    <View className="bg-background text-foreground flex flex-1">
       <Stack.Screen options={{ title: 'Oops!' }} />
       <Container>
         <Text className="text-xl font-bold">{"This screen doesn't exist."}</Text>

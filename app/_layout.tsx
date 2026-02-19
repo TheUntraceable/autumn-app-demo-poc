@@ -9,7 +9,7 @@ const queryClient = new QueryClient();
 
 export default function Layout() {
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
+    <GestureHandlerRootView className="bg-background flex-1">
       <QueryClientProvider client={queryClient}>
         <HeroUINativeProvider>
           <Stack />

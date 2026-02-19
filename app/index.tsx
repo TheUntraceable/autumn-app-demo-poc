@@ -17,7 +17,7 @@ export default function IndexScreen() {
   }, []);
 
   return (
-    <View className="flex-1 items-center justify-center bg-background text-foreground">
+    <View className="bg-background text-foreground flex-1 items-center justify-center">
       <ActivityIndicator size="large" />
     </View>
   );

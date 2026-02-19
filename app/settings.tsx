@@ -22,7 +22,7 @@ export default function SettingsScreen() {
   };
 
   return (
-    <View className="flex-1 px-4 pt-4">
+    <View className="bg-background flex-1 px-4 pt-4">
       <Stack.Screen options={{ title: 'Settings' }} />
 
       <ScrollView>
@@ -35,12 +35,10 @@ export default function SettingsScreen() {
 
         <Card className="p-4">
           <Text className="mb-2 text-sm text-gray-500">Account</Text>
+          <Button variant="danger" onPress={() => setIsDialogOpen(true)}>
+            Clear API Key
+          </Button>
           <Dialog isOpen={isDialogOpen} onOpenChange={setIsDialogOpen}>
-            <Dialog.Trigger>
-              <Button variant="danger">
-                Clear API Key
-              </Button>
-            </Dialog.Trigger>
             <Dialog.Portal>
               <Dialog.Overlay />
               <Dialog.Content>

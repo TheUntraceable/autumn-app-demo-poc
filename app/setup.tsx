@@ -27,7 +27,7 @@ export default function SetupScreen() {
   };
 
   return (
-    <View className="flex-1 justify-center px-6">
+    <View className="bg-background flex-1 justify-center px-6">
       <Stack.Screen options={{ title: 'Setup', headerBackVisible: false }} />
       <View className="flex flex-col gap-4">
         <Input
