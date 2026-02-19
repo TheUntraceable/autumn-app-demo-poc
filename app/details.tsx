@@ -9,7 +9,7 @@ export default function Details() {
   const { name } = useLocalSearchParams();
 
   return (
-    <View className={styles.container}>
+    <View className="flex flex-1 bg-background text-foreground">
       <Stack.Screen options={{ title: 'Details' }} />
       <Container>
         <ScreenContent path="screens/details.tsx" title={`Showing details for user ${name}`} />
@@ -17,7 +17,3 @@ export default function Details() {
     </View>
   );
 }
-
-const styles = {
-  container: 'flex flex-1 bg-white',
-};
